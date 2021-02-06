@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>not found</title>
 </head>
 <body>
-    <h3>holas</h3>
+    <h2>Pagina no encontrada</h2>
 </body>
 </html>
