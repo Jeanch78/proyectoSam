@@ -29,6 +29,5 @@ require_once("Libraries/Core/Load.php");
 
 /*echo "<br> controlador : ".$controller;
 echo "<br> metodo : ".$method;
-echo "<br> parametros : ".$params;*/
 
 ?>
