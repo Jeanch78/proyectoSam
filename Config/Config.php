@@ -1,6 +1,9 @@
-<?php
-//define("BASE_URL","http://localhost/tiendaVirtual/");
-const BASE_URL="http://localhost/tiendaVirtual/";
-const LIBS ="Libraries/";
-const VIEWS ="Views/";
-?>
+<?php 
+	
+	//define("BASE_URL", "http://localhost/tienda_virtual/");
+	const BASE_URL = "http://localhost/tienda_virtual/";
+
+	
+
+
+ ?>
