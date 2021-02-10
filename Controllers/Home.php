@@ -12,7 +12,7 @@
 			$data['tag_page'] = "Home";
 			$data['page_title'] = "Página principal";
 			$data['page_name'] = "home";
-			$data['page_content'] = "Pagina Principal Home";
+			$data['page_content'] = "Pagina Principal H";
 			$this->views->getView($this,"home",$data);
 		}
 	}
