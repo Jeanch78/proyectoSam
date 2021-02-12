@@ -9,13 +9,13 @@
 		public function home()
 		{
 			$data['page_id'] = 1;
-			$data['tag_page'] = "Home";
+			$data['page_tag'] = "Home";
 			$data['page_title'] = "Página principal";
 			$data['page_name'] = "home";
 			$data['page_content'] = "Pagina Principal H";
 			$this->views->getView($this,"home",$data);
 		}
-		public function insertar()
+		/*public function insertar()
 		{
 			$data =$this->model->setUser("carlos",18);
 			print_r($data);
@@ -39,6 +39,7 @@
 		{
 			$data =$this->model->delUser($id);
 			print_r($data);
-		}
+		}*/
+		
 	}
  ?>
