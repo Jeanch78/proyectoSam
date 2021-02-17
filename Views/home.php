@@ -7,7 +7,7 @@
 </head>
 
 <body>
-	
+	<h2>Holas</h2>
 </body>
 
 </html>

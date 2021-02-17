@@ -1,7 +1,8 @@
 <?php 
 	
 	//define("BASE_URL", "http://localhost/tienda_virtual/");
-	const BASE_URL = "http://localhost/proyectoSam/";
+	//const BASE_URL = "http://localhost/proyectoSam/";
+	const BASE_URL = "http://localhost/proyectoSam";
 
 	//Xona horaria
 	date_default_timezone_set('America/Lima');
