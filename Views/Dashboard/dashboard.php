@@ -68,7 +68,9 @@
         </div>
     </div>
 </div>
-<!--Seccion para editar pagina en blanco -->
+<!-- =================Seccion para editar pagina en blanco================== -->
+
 <h3>hola</h3>
-<!--Fin de pagina en blanco -->
+
+<!-- =========================Fin de pagina en blanco======================= -->
 <?php footerAdmin($data); ?>

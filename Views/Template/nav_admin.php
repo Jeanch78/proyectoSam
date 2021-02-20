@@ -1,4 +1,4 @@
-<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header"> <!--====Color de fondo==== -->
     <div class="app-header header-shadow">
         <div class="app-header__logo">
             <div class="logo-src"></div>
@@ -210,7 +210,7 @@
                                     </div>
                                     <div class="divider">
                                     </div>
-                                    <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
+                                    <!-- <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
                                     </div>
                                     <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
                                     </div>
@@ -261,7 +261,7 @@
                                     <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
                                     </div>
                                     <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
-                                    </div>
+                                    </div>-->
                                 </div>
                             </li>
                         </ul>
@@ -300,7 +300,7 @@
                                     </div>
                                     <div class="divider">
                                     </div>
-                                    <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
+                                    <!-- <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
                                     </div>
                                     <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
                                     </div>
@@ -351,7 +351,7 @@
                                     <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
                                     </div>
                                     <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
-                                    </div>
+                                    </div> -->
                                 </div>
                             </li>
                         </ul>
@@ -417,6 +417,7 @@
                     </button>
                 </span>
             </div>
+            <!-- Menu lateral Dashboard -->
             <div class="scrollbar-sidebar">
                 <div class="app-sidebar__inner">
                     <ul class="vertical-nav-menu">
