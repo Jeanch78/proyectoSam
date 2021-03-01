@@ -213,7 +213,7 @@
                                     </div>
                                     <div class="divider">
                                     </div>
-
+                         
                                 </div>
                             </li>
                         </ul>
@@ -252,7 +252,7 @@
                                     </div>
                                     <div class="divider">
                                     </div>
-
+                                  
                                 </div>
                             </li>
                         </ul>
@@ -324,233 +324,71 @@
                     <ul class="vertical-nav-menu">
                         <li class="app-sidebar__heading">Dashboards</li>
                         <li>
-                            <a href="<?= base_url(); ?>/dashboard" class="mm-active">
+                            <a href="<?= base_url();?>/dashboard" class="mm-active">
                                 <i class="metismenu-icon pe-7s-rocket"></i>
                                 Dashboard
                             </a>
                         </li>
-                        <li class="app-sidebar__heading">UI Components</li>
+                        <!-- poner espacios sin  br -->
+                        <br>
+                        <br>
                         <li>
                             <a href="#">
-                                <i class="metismenu-icon pe-7s-diamond"></i>
-                                Elements
-                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="elements-buttons-standard.html">
-                                        <i class="metismenu-icon"></i>
-                                        Buttons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-dropdowns.html">
-                                        <i class="metismenu-icon">
-                                        </i>Dropdowns
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-icons.html">
-                                        <i class="metismenu-icon">
-                                        </i>Icons
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-badges-labels.html">
-                                        <i class="metismenu-icon">
-                                        </i>Badges
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-cards.html">
-                                        <i class="metismenu-icon">
-                                        </i>Cards
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-list-group.html">
-                                        <i class="metismenu-icon">
-                                        </i>List Groups
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-navigation.html">
-                                        <i class="metismenu-icon">
-                                        </i>Navigation Menus
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="elements-utilities.html">
-                                        <i class="metismenu-icon">
-                                        </i>Utilities
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <i class="metismenu-icon pe-7s-car"></i>
-                                Components
-                                <i class="metismenu-state-icon pe-7s-angle-down caret-left"></i>
-                            </a>
-                            <ul>
-                                <li>
-                                    <a href="components-tabs.html">
-                                        <i class="metismenu-icon">
-                                        </i>Tabs
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-accordions.html">
-                                        <i class="metismenu-icon">
-                                        </i>Accordions
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-notifications.html">
-                                        <i class="metismenu-icon">
-                                        </i>Notifications
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-modals.html">
-                                        <i class="metismenu-icon">
-                                        </i>Modals
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-progress-bar.html">
-                                        <i class="metismenu-icon">
-                                        </i>Progress Bar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-tooltips-popovers.html">
-                                        <i class="metismenu-icon">
-                                        </i>Tooltips &amp; Popovers
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-carousel.html">
-                                        <i class="metismenu-icon">
-                                        </i>Carousel
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-calendar.html">
-                                        <i class="metismenu-icon">
-                                        </i>Calendar
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-pagination.html">
-                                        <i class="metismenu-icon">
-                                        </i>Pagination
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-scrollable-elements.html">
-                                        <i class="metismenu-icon">
-                                        </i>Scrollable
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="components-maps.html">
-                                        <i class="metismenu-icon">
-                                        </i>Maps
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="tables-regular.html">
-                                <i class="metismenu-icon pe-7s-display2"></i>
-                                Tables
-                            </a>
-                        </li>
-
-                        <li class="app-sidebar__heading">Usuarios</li>
-                        <li>
-                            <a href="<?= base_url(); ?>/usuarios">
-                                <i class="metismenu-icon  pe-7s-users"></i>
+                                <i class="metismenu-icon fa fa-users" aria-hidden="true"></i>
                                 Usuarios
                             </a>
+                            <ul>
+                                <li>
+                                    <a href="<?= base_url();?>/usuarios">
+                                        <i class="metismenu-icon"></i>
+                                        Usuarios
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= base_url();?>/roles">
+                                        <i class="metismenu-icon">
+                                        </i>Roles
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="<?= base_url();?>/permisos">
+                                        <i class="metismenu-icon">
+                                        </i>Permisos
+                                    </a>
+                                </li>
+                            </ul>
                         </li>
+                        <br>
                         <li>
-                            <a href="<?= base_url(); ?>/roles">
-                                <i class="metismenu-icon fa fa-user-md"></i>
-                                </i>Roles
+                            <a href="<?= base_url();?>/clientes">
+                                <i class="metismenu-icon fa fa-user" aria-hidden="true"></i>
+                                Clientes
                             </a>
                         </li>
+                        <br>
                         <li>
-                            <a href="<?= base_url(); ?>/permisos">
-
-                                <i class="metismenu-icon pe-7s-tools">
-                                </i>Permisos
+                            <a href="<?= base_url();?>/productos">
+                                <i class="metismenu-icon fa fa-archive"></i>
+                                Productos
                             </a>
                         </li>
-                        <!-- tienda -->
-                        <li class="app-sidebar__heading">Tienda</li>
+                        <br>
                         <li>
-                            <a href="<?= base_url(); ?>/clientes">
-                                <i class="metismenu-icon">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-lines-fill" viewBox="0 0 16 16">
-                                        <path d="M6 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm-5 6s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zM11 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5zm.5 2.5a.5.5 0 0 0 0 1h4a.5.5 0 0 0 0-1h-4zm2 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2zm0 3a.5.5 0 0 0 0 1h2a.5.5 0 0 0 0-1h-2z" />
-                                    </svg>
-                                </i>Clientes
+                            <a href="<?= base_url();?>/pedidos">
+                                <i class="metismenu-icon fa fa-shopping-cart"></i>
+                                Pedidos
                             </a>
                         </li>
+                        <br>
                         <li>
-                            <a href="<?= base_url(); ?>/productos">
-                                <i class="metismenu-icon pe-7s-box2">
-                                </i>Productos
+                            <a href="<?= base_url();?>/logout">
+                            <i class="metismenu-icon fas fa-sign-out-alt"></i>
+                                Logout
                             </a>
                         </li>
-                        <li>
-                            <a href="<?= base_url(); ?>/pedidos">
-                                <i class="metismenu-icon pe-7s-cart">
-                                </i>Pedidos
-                            </a>
-                        </li>
-                        <!-- logout -->
-                        <li class="app-sidebar__heading">Logout</li>
-                        <li>
-                            <a href="<?= base_url(); ?>/logout">
-                                <i class="metismenu-icon fa fa-sign-out-alt">
-                                </i>Logout
-                            </a>
-                        </li>
-
-                        <!-- <li class="app-sidebar__heading">Forms</li>
-                        <li>
-                            <a href="forms-controls.html">
-                                <i class="metismenu-icon pe-7s-mouse">
-                                </i>Forms Controls
-                            </a>
-                        </li>
-                        <li>
-                            <a href="forms-layouts.html">
-                                <i class="metismenu-icon pe-7s-eyedropper">
-                                </i>Forms Layouts
-                            </a>
-                        </li>
-                        <li>
-                            <a href="forms-validation.html">
-                                <i class="metismenu-icon pe-7s-pendrive">
-                                </i>Forms Validation
-                            </a>
-                        </li>
-                        <li class="app-sidebar__heading">Charts</li>
-                        <li>
-                            <a href="charts-chartjs.html">
-                                <i class="metismenu-icon pe-7s-graph2">
-                                </i>ChartJS
-                            </a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
         </div>
-
         <div class="app-main__outer">
             <div class="app-main__inner">
