@@ -1,4 +1,5 @@
-<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header"> <!--====Color de fondo==== -->
+<div class="app-container app-theme-white body-tabs-shadow fixed-sidebar fixed-header">
+    <!--====Color de fondo==== -->
     <div class="app-header header-shadow">
         <div class="app-header__logo">
             <div class="logo-src"></div>
@@ -67,26 +68,30 @@
                             <div class="widget-content-left">
                                 <div class="btn-group">
                                     <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="p-0 btn">
-                                        <img width="42" class="rounded-circle" src="assets/images/avatars/1.jpg" alt="">
+                                        <img width="42" class="rounded-circle" src="<?= media(); ?>/images/avatars/1.jpg" alt="">
                                         <i class="fa fa-angle-down ml-2 opacity-8"></i>
                                     </a>
                                     <div tabindex="-1" role="menu" aria-hidden="true" class="dropdown-menu dropdown-menu-right">
-                                        <button type="button" tabindex="0" class="dropdown-item">User
+                                        <!-- <button type="button" tabindex="0" class="dropdown-item">User
                                             Account</button>
                                         <button type="button" tabindex="0" class="dropdown-item">Settings</button>
                                         <h6 tabindex="-1" class="dropdown-header">Header</h6>
                                         <button type="button" tabindex="0" class="dropdown-item">Actions</button>
                                         <div tabindex="-1" class="dropdown-divider"></div>
-                                        <button type="button" tabindex="0" class="dropdown-item">Dividers</button>
+                                        <button type="button" tabindex="0" class="dropdown-item">Dividers</button> -->
+                                        <a href="<?= base_url(); ?>/opciones" class="dropdown-item">Opciones</a>
+                                        <a href="<?= base_url(); ?>/perfil" class="dropdown-item">Perfil</a>
+                                        <div tabindex="-1" class="dropdown-divider"></div>
+                                        <a href="<?= base_url(); ?>/logout" class="dropdown-item">Logout</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="widget-content-left  ml-3 header-user-info">
                                 <div class="widget-heading">
-                                    Alina Mclourd
+                                    Jean Damian
                                 </div>
                                 <div class="widget-subheading">
-                                    VP People Manager
+                                    Administrador
                                 </div>
                             </div>
                             <div class="widget-content-right header-user-info ml-3">
@@ -108,7 +113,7 @@
         <div class="theme-settings__inner">
             <div class="scrollbar-container">
                 <div class="theme-settings__options-wrapper">
-                    <h3 class="themeoptions-heading">Layout Options
+                    <h3 class="themeoptions-heading">Opciones De Diseño
                     </h3>
                     <div class="p-3">
                         <ul class="list-group">
@@ -123,10 +128,9 @@
                                             </div>
                                         </div>
                                         <div class="widget-content-left">
-                                            <div class="widget-heading">Fixed Header
+                                            <div class="widget-heading">Encabezado fijo
                                             </div>
-                                            <div class="widget-subheading">Makes the header top fixed, always
-                                                visible!
+                                            <div class="widget-subheading">Hace que la parte superior del encabezado sea fija, ¡siempre visible!
                                             </div>
                                         </div>
                                     </div>
@@ -143,10 +147,9 @@
                                             </div>
                                         </div>
                                         <div class="widget-content-left">
-                                            <div class="widget-heading">Fixed Sidebar
+                                            <div class="widget-heading">Barra lateral fija
                                             </div>
-                                            <div class="widget-subheading">Makes the sidebar left fixed, always
-                                                visible!
+                                            <div class="widget-subheading">Hace que la barra lateral izquierda esté fija, ¡siempre visible!
                                             </div>
                                         </div>
                                     </div>
@@ -163,10 +166,10 @@
                                             </div>
                                         </div>
                                         <div class="widget-content-left">
-                                            <div class="widget-heading">Fixed Footer
+                                            <div class="widget-heading">Pie de página fijo
                                             </div>
-                                            <div class="widget-subheading">Makes the app footer bottom fixed, always
-                                                visible!
+                                            <div class="widget-subheading">Hace que la parte inferior del pie de página de la aplicación sea fija, siempre
+                                                ¡visible!
                                             </div>
                                         </div>
                                     </div>
@@ -176,7 +179,7 @@
                     </div>
                     <h3 class="themeoptions-heading">
                         <div>
-                            Header Options
+                            Opciones de encabezado
                         </div>
                         <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-header-cs-class" data-class="">
                             Restore Default
@@ -185,7 +188,7 @@
                     <div class="p-3">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h5 class="pb-2">Choose Color Scheme
+                                <h5 class="pb-2">Elija el esquema de color
                                 </h5>
                                 <div class="theme-settings-swatches">
                                     <div class="swatch-holder bg-primary switch-header-cs-class" data-class="bg-primary header-text-light">
@@ -210,64 +213,13 @@
                                     </div>
                                     <div class="divider">
                                     </div>
-                                    <!-- <div class="swatch-holder bg-vicious-stance switch-header-cs-class" data-class="bg-vicious-stance header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-midnight-bloom switch-header-cs-class" data-class="bg-midnight-bloom header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-night-sky switch-header-cs-class" data-class="bg-night-sky header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-slick-carbon switch-header-cs-class" data-class="bg-slick-carbon header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-asteroid switch-header-cs-class" data-class="bg-asteroid header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-royal switch-header-cs-class" data-class="bg-royal header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-warm-flame switch-header-cs-class" data-class="bg-warm-flame header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-night-fade switch-header-cs-class" data-class="bg-night-fade header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-sunny-morning switch-header-cs-class" data-class="bg-sunny-morning header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-tempting-azure switch-header-cs-class" data-class="bg-tempting-azure header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-amy-crisp switch-header-cs-class" data-class="bg-amy-crisp header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-heavy-rain switch-header-cs-class" data-class="bg-heavy-rain header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-mean-fruit switch-header-cs-class" data-class="bg-mean-fruit header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-malibu-beach switch-header-cs-class" data-class="bg-malibu-beach header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-deep-blue switch-header-cs-class" data-class="bg-deep-blue header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-ripe-malin switch-header-cs-class" data-class="bg-ripe-malin header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-arielle-smile switch-header-cs-class" data-class="bg-arielle-smile header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-plum-plate switch-header-cs-class" data-class="bg-plum-plate header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-happy-fisher switch-header-cs-class" data-class="bg-happy-fisher header-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-happy-itmeo switch-header-cs-class" data-class="bg-happy-itmeo header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-mixed-hopes switch-header-cs-class" data-class="bg-mixed-hopes header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-strong-bliss switch-header-cs-class" data-class="bg-strong-bliss header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-grow-early switch-header-cs-class" data-class="bg-grow-early header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-love-kiss switch-header-cs-class" data-class="bg-love-kiss header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-premium-dark switch-header-cs-class" data-class="bg-premium-dark header-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-happy-green switch-header-cs-class" data-class="bg-happy-green header-text-light">
-                                    </div>-->
+                         
                                 </div>
                             </li>
                         </ul>
                     </div>
                     <h3 class="themeoptions-heading">
-                        <div>Sidebar Options</div>
+                        <div>Opciones de la barra lateral</div>
                         <button type="button" class="btn-pill btn-shadow btn-wide ml-auto btn btn-focus btn-sm switch-sidebar-cs-class" data-class="">
                             Restore Default
                         </button>
@@ -275,7 +227,7 @@
                     <div class="p-3">
                         <ul class="list-group">
                             <li class="list-group-item">
-                                <h5 class="pb-2">Choose Color Scheme
+                                <h5 class="pb-2">Elija el esquema de color
                                 </h5>
                                 <div class="theme-settings-swatches">
                                     <div class="swatch-holder bg-primary switch-sidebar-cs-class" data-class="bg-primary sidebar-text-light">
@@ -300,58 +252,7 @@
                                     </div>
                                     <div class="divider">
                                     </div>
-                                    <!-- <div class="swatch-holder bg-vicious-stance switch-sidebar-cs-class" data-class="bg-vicious-stance sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-midnight-bloom switch-sidebar-cs-class" data-class="bg-midnight-bloom sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-night-sky switch-sidebar-cs-class" data-class="bg-night-sky sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-slick-carbon switch-sidebar-cs-class" data-class="bg-slick-carbon sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-asteroid switch-sidebar-cs-class" data-class="bg-asteroid sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-royal switch-sidebar-cs-class" data-class="bg-royal sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-warm-flame switch-sidebar-cs-class" data-class="bg-warm-flame sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-night-fade switch-sidebar-cs-class" data-class="bg-night-fade sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-sunny-morning switch-sidebar-cs-class" data-class="bg-sunny-morning sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-tempting-azure switch-sidebar-cs-class" data-class="bg-tempting-azure sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-amy-crisp switch-sidebar-cs-class" data-class="bg-amy-crisp sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-heavy-rain switch-sidebar-cs-class" data-class="bg-heavy-rain sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-mean-fruit switch-sidebar-cs-class" data-class="bg-mean-fruit sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-malibu-beach switch-sidebar-cs-class" data-class="bg-malibu-beach sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-deep-blue switch-sidebar-cs-class" data-class="bg-deep-blue sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-ripe-malin switch-sidebar-cs-class" data-class="bg-ripe-malin sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-arielle-smile switch-sidebar-cs-class" data-class="bg-arielle-smile sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-plum-plate switch-sidebar-cs-class" data-class="bg-plum-plate sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-happy-fisher switch-sidebar-cs-class" data-class="bg-happy-fisher sidebar-text-dark">
-                                    </div>
-                                    <div class="swatch-holder bg-happy-itmeo switch-sidebar-cs-class" data-class="bg-happy-itmeo sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-mixed-hopes switch-sidebar-cs-class" data-class="bg-mixed-hopes sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-strong-bliss switch-sidebar-cs-class" data-class="bg-strong-bliss sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-grow-early switch-sidebar-cs-class" data-class="bg-grow-early sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-love-kiss switch-sidebar-cs-class" data-class="bg-love-kiss sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-premium-dark switch-sidebar-cs-class" data-class="bg-premium-dark sidebar-text-light">
-                                    </div>
-                                    <div class="swatch-holder bg-happy-green switch-sidebar-cs-class" data-class="bg-happy-green sidebar-text-light">
-                                    </div> -->
+                                  
                                 </div>
                             </li>
                         </ul>
