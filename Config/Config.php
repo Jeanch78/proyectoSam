@@ -7,7 +7,7 @@
 	//Xona horaria
 	date_default_timezone_set('America/Lima');
 	//Datos de conexion a BD
-	const DB_HOST = "localhost:3308";
+	const DB_HOST = "localhost";
 	const DB_NAME = "proyecto_sam";
 	const DB_USER = "root";
 	const DB_PASSWORD = "";

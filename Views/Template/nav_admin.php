@@ -477,7 +477,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?= base_url(); ?>/roles">
+                            <a href="<?= base_url(); ?>/roles" class="">
                                 <i class="metismenu-icon fa fa-user-md"></i>
                                 </i>Roles
                             </a>
