@@ -13,6 +13,8 @@
     <link rel="shortcut icon" href="<?= media(); ?>/images/favicon.ico">
     <title><?= $data["page_tag"]; ?></title>
     <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/main.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.23/css/jquery.dataTables.min.css">
+
     <link rel="stylesheet" type="text/css" href="<?= media(); ?>/css/style.css">
 </head>
 

@@ -44,6 +44,7 @@
 </div>
 
 <script type="text/javascript" src="<?= media(); ?>/js/main.js"></script>
+<script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery-3.6.0.min.js"></script>
 </body>
 
 </html>

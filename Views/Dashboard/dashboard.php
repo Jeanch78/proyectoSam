@@ -70,56 +70,7 @@
 </div>
 <!-- =================Seccion para editar pagina en blanco================== -->
 
-<h3>hola</h3>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur ipsum qui optio!
-    Rem repellendus sed incidunt minus dolore ut officia et voluptatem maxime ducimus
-    modi temporibus perspiciatis, eveniet cumque dolor.</p>
-
 
 <!-- =========================Fin de pagina en blanco======================= -->
 <?php footerAdmin($data); ?>
+
