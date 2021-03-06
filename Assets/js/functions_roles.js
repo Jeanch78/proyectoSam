@@ -1,3 +1,5 @@
+
+$('#tableRoles').DataTable();
 function openModal(){
-    $('#modalFormRol').modal('show')
+    $('#modalFormRol').modal('show');
 }

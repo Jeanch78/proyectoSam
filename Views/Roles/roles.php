@@ -92,7 +92,7 @@ headerAdmin($data);
         <div class="main-card mb-3 card">
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table table-hover table-bordered" id="sampleTable" style="width:100%">
+                    <table class="table table-hover table-bordered" id="tableRoles" style="width:100%">
                         <thead>
                             <tr>
                                 <th>Name</th>
@@ -294,9 +294,3 @@ footerAdmin($data);
 getModal('modalRoles', $data);
 ?>
 
-<!-- Data table plugin-->
-<script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery.dataTables.js"></script>
-<script type="text/javascript" src="<?= media(); ?>/js/plugins/dataTables.bootstrap.min.js"></script>
-<script type="text/javascript">
-    $('#sampleTable').DataTable();
-</script>
