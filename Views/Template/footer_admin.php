@@ -42,9 +42,10 @@
 <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
 </div>
 </div>
-
-<script type="text/javascript" src="<?= media(); ?>/js/main.js"></script>
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="<?= media(); ?>/js/main.js"></script>
+<script src="<?= media(); ?>/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="<?= media(); ?>/js/functions_roles.js"></script>
 </body>
 
 </html>
