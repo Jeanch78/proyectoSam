@@ -79,10 +79,12 @@ headerAdmin($data);
             <div class="card-body">
                 <div class="card-title">Basic Examples</div>
                 <!-- Button  modal -->
-                <button type="button" class="btn mr-2 mb-2 btn-success" onclick="openModal();">
+                <!-- <button type="button" class="btn mr-2 mb-2 btn-success" onclick="openModal();">
+                    <i class="fa fa-plus-circle" aria-hidden="true"></i> Nuevo
+                </button> -->
+                <button type="button" class="btn mr-2 mb-2 btn-success" data-toggle="modal" data-target="#modalFormRol">
                     <i class="fa fa-plus-circle" aria-hidden="true"></i> Nuevo
                 </button>
-
             </div>
         </div>
     </div>
@@ -291,6 +293,4 @@ headerAdmin($data);
 <!-- =========================Fin de pagina en blanco======================= -->
 <?php
 footerAdmin($data);
-getModal('modalRoles', $data);
-?>
-
+getModal('modalRoles', $data);?>

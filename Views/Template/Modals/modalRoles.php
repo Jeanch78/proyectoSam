@@ -26,7 +26,7 @@
                     </div>
                     <div class="title-footer">
                         <button class="btn btn-success" type="submit"><i class="fa fa-check-circle"></i> Guardar</button>
-                        <button type="button" class="btn btn-danger "><i class="fa fa-times-circle"></i> Cancelar</button>
+                        <button type="button" class="btn btn-danger" data-dismiss="modal"><i class="fa fa-times-circle"></i> Cancelar</button>
                     </div>
                 </form>
             </div>
