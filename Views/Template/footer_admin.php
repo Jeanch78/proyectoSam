@@ -43,14 +43,13 @@
 </div>
 </div>
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery-3.6.0.min.js"></script>
-<script src="<?= media(); ?>/js/bootstrap.min.js"></script>
-
+<script src="<?= media(); ?>/js/bootstrap5.min.js"></script>
 <script type="text/javascript" src="<?= media(); ?>/js/main.js"></script>
-
-
 <script>
     const base_url = "<?= base_url(); ?>";
 </script>
+<!-- swetAlert -->
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 <!-- Data table plugin-->
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery.dataTables.js"></script>
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/dataTables.bootstrap.min.js"></script>

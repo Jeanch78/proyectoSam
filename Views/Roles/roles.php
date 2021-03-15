@@ -82,9 +82,9 @@ headerAdmin($data);
                 <button type="button" class="btn mr-2 mb-2 btn-success" onclick="openModal();">
                     <i class="fa fa-plus-circle" aria-hidden="true"></i> Nuevo js
                 </button>
-                <button type="button" class="btn mr-2 mb-2 btn-success" data-toggle="modal" data-target="#modalFormRol">
+                <!-- <button type="button" class="btn mr-2 mb-2 btn-success" data-toggle="modal" data-target="#modalFormRol">
                     <i class="fa fa-plus-circle" aria-hidden="true"></i> Nuevo
-                </button>
+                </button> -->
             </div>
         </div>
     </div>
@@ -116,6 +116,3 @@ headerAdmin($data);
 <?php
 footerAdmin($data);
 getModal('modalRoles', $data); ?>
-
-
-

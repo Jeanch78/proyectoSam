@@ -21,7 +21,34 @@ document.addEventListener('DOMContentLoaded', function () {
 		"bDestroy": true,
 		"iDisplayLength": 10, /*Mostrará los primero 10 registros*/
 		"order": [[0, "desc"]] /*Ordenar de forma Desendente*/
-	})
+	});
+
+	//NUEVO ROL
+	var formRol = document.querySelector("#formRol");
+
+	formRol.onsubmit = function (e) {
+		e.preventDefault();
+
+		var strNombre = document.querySelector("#txtNombre").value;
+		var strDescripcion = document.querySelector("#txtDescripcion").value;
+		var intStatus = document.querySelector("#listStatus").value;
+		if (strNombre == '' || strDescripcion == '' || intStatus == '') {
+			swal("atención", "todos los campos son obligatorios.", "error");
+			return false;
+
+		}
+		var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
+		var ajaxUrl = base_url+'/Roles/setRol';
+		var formData = new FormData(formRol);
+		request.open("POST",ajaxUrl,true);
+		request.send(formData);
+		request.onreadystatechange = function(){
+			if (request.readyState == 4 && request.status == 200) {
+			console.log(request.responseText);
+				
+			}
+		}
+	};
 });
 
 $('#tableRoles').DataTable();
@@ -30,6 +57,7 @@ function openModal() {
 	$('#modalFormRol').modal('show');
 }
 
-function openModal2() {
-	$('#modalPrueba').modal('show');
+function closeModal() {
+	$('#modalFormRol').modal('hide');
 }
+
