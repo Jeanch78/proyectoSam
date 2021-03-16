@@ -33,7 +33,7 @@ class Roles extends Controllers
 				'<div class="text-center">
 					<button class="btn btn-secondary btn-sm btnPermisosRol" rl="' . $arrData[$i]['idrol'] . '" title="Permisos"><i class="fas fa-key"></i></button>
 					<button class="btn btn-primary btn-sm btnEditRol" rl="' . $arrData[$i]['idrol'] . '" title="Editar"><i class="fas fa-pencil-alt"></i></button>
-					<button class="btn btn-danger btn-sm btnDelRol" rl="' . $arrData[$i]['idrol'] . '" title="Eliminar"><i class="far fa-trash-alt"></i></button>
+					<button class="btn btn-danger btn-sm btnDelRol" rl="' . $arrData[$i]['idrol'] . '" title="Eliminar"><i class="fas fa-trash-alt"></i></button>
 				</div>';
 		}
 		echo json_encode($arrData, JSON_UNESCAPED_UNICODE);
@@ -44,6 +44,16 @@ class Roles extends Controllers
 		$strRol = strClean($_POST['txtNombre']);
 		$strDescripcion = strClean($_POST['txtDescripcion']);
 		$intStatus = intval($_POST['listStatus']);
-		$request_rol = $this->model->insertRol($strRol,$strDescripcion,$intStatus);
+		$request_rol = $this->model->insertRol($strRol, $strDescripcion, $intStatus);
+
+		if ($request_rol > 0) {
+			$arrResponse = array('status' => true, 'msg' => 'Datos Guardados con Exito.');
+		} else if ($request_rol == 'exist') {
+			$arrResponse = array('status' => false, 'msg' => '¡Atención! el Rol ya existe.');
+		} else {
+			$arrResponse = array('status' => false, 'msg' => 'No es posible almacenar datos.');
+		}
+		echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+		die();
 	}
 }

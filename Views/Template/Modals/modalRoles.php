@@ -1,17 +1,18 @@
 <div class="modal fade" id="modalFormRol" tabindex="-1" role="dialog" aria-labelledby="modalFormRolLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header bg-primary" style="color: #fff;">
-                <h5 class="modal-title" id="modalFormRolLabel">Nuevo Rol</h5>
+            <div class="modal-header headerRegister bg-primary" style="color: #fff;">
+                <h5 class="modal-title" id="titleModal">Nuevo Rol</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal();">
                     <span aria-hidden="true">&times;</span>
                 </button>
             </div>
             <div class="modal-body">
                 <form class="needs-validation" id="formRol" name="formRol">
+                    <input type="hidden" id="idRol" name="idRol" value="">
                     <div class="position-relative form-group">
                         <label for="nombre" class="">Nombre</label>
-                        <input name="text" id="txtNombre" placeholder="Nombre del rol" type="text" class="form-control" required>
+                        <input name="txtNombre" id="txtNombre" placeholder="Nombre del rol" type="text" class="form-control" required>
                         <div class="valid-feedback">Correcto!</div>
                         <div class="invalid-feedback">Nombre incorrecto</div>
                     </div>
@@ -29,7 +30,7 @@
                         </select>
                     </div>
                     <div class="title-footer">
-                        <button class="btn btn-success" type="submit"><i class="fa fa-check-circle"></i> Guardar</button>
+                        <button id="btnActionForm" class="btn btn-success" type="submit"><i class="fa fa-check-circle"></i><span id="btnText">Guardar</span></button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="closeModal();"><i class="fa fa-times-circle"></i> Cancelar</button>
                     </div>
                 </form>

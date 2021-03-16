@@ -38,14 +38,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
 		}
 		var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsoft.XMLHTTP');
-		var ajaxUrl = base_url+'/Roles/setRol';
+		var ajaxUrl = base_url + '/Roles/setRol';
 		var formData = new FormData(formRol);
-		request.open("POST",ajaxUrl,true);
+		request.open("POST", ajaxUrl, true);
 		request.send(formData);
-		request.onreadystatechange = function(){
+		request.onreadystatechange = function () {
 			if (request.readyState == 4 && request.status == 200) {
-			console.log(request.responseText);
-				
+				var objData = JSON.parse(request.responseText);
+				if (objData.status) {
+					$('#modalFormRol').modal("hide");
+					formRol.reset();
+					swal("Roles de usuario", objData.msg, "success");
+					tableRoles.api().ajax.reload(function () {
+
+					});
+				} else {
+					swal("Error", objData.msg, "error");
+				}
 			}
 		}
 	};
@@ -54,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
 $('#tableRoles').DataTable();
 
 function openModal() {
+	document.querySelector('#titleModal').innerHTML = " Nuevo Rol";
 	$('#modalFormRol').modal('show');
 }
 
@@ -61,3 +71,22 @@ function closeModal() {
 	$('#modalFormRol').modal('hide');
 }
 
+window.addEventListener("load", function () {
+	setTimeout(() => {
+		fntEditRol();
+	}, 500);
+}, false);
+function fntEditRol() {
+	const btnEditRol = document.querySelectorAll(".btnEditRol");
+	btnEditRol.forEach(function (btnEditRol) {
+		btnEditRol.addEventListener('click', function () {
+
+			document.querySelector('#titleModal').innerHTML = " Actualizar Rol";
+			document.querySelector('.modal-header').classList.replace("headerRegister", "headerUpdate");
+			document.querySelector('#btnActionForm').classList.replace("btn-success", "btn-info");
+			document.querySelector('#btnText').innerHTML = " Actualizar";
+
+			$('#modalFormRol').modal('show');
+		});
+	});
+}
