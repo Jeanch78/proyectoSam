@@ -1,7 +1,7 @@
 <div class="modal fade" id="modalFormRol" tabindex="-1" role="dialog" aria-labelledby="modalFormRolLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <div class="modal-header headerRegister bg-primary" style="color: #fff;">
+            <div class="modal-header headerRegister" style="color: #fff;">
                 <h5 class="modal-title" id="titleModal">Nuevo Rol</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close" onclick="closeModal();">
                     <span aria-hidden="true">&times;</span>
@@ -30,7 +30,7 @@
                         </select>
                     </div>
                     <div class="title-footer">
-                        <button id="btnActionForm" class="btn btn-success" type="submit"><i class="fa fa-check-circle"></i><span id="btnText">Guardar</span></button>
+                        <button id="btnActionForm" class="btn btn-primary" type="submit"><i class="fa fa-check-circle"></i><span id="btnText">Guardar</span></button>
                         <button type="button" class="btn btn-danger" data-dismiss="modal" onclick="closeModal();"><i class="fa fa-times-circle"></i> Cancelar</button>
                     </div>
                 </form>

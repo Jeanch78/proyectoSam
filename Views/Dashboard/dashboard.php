@@ -70,7 +70,5 @@
 </div>
 <!-- =================Seccion para editar pagina en blanco================== -->
 
-
 <!-- =========================Fin de pagina en blanco======================= -->
 <?php footerAdmin($data); ?>
-

@@ -1,4 +1,16 @@
 /* data table */
-  .dataTables_wrapper .dataTables_paginate .paginate_button{
-      padding: 0 !important;
-  }
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+  padding: 0 !important;
+}
+
+/* color del Modal Rol */
+.headerRegister {
+  /* background: #009688; */
+  background: #3f6ad8;
+  color     : #fff;
+}
+
+.headerUpdate {
+  background: #007bff;
+  color     : #fff;
+}

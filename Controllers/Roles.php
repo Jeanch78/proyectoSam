@@ -14,7 +14,7 @@ class Roles extends Controllers
 		$data['page_title'] = "Roles usuario";
 		$data['page_description'] = "Niveles de usuario ";
 		$data['page_name'] = "rol_usuario";
-		$data['data_class_rol'] = "mm-active";
+		$data['class_active'] = "active_rol";
 
 		$this->views->getView($this, "roles", $data);
 	}
@@ -39,6 +39,11 @@ class Roles extends Controllers
 		echo json_encode($arrData, JSON_UNESCAPED_UNICODE);
 		die();
 	}
+
+	public function getRol($idrol)
+	{
+
+	}
 	public function setRol()
 	{
 		$strRol = strClean($_POST['txtNombre']);
@@ -53,7 +58,7 @@ class Roles extends Controllers
 		} else {
 			$arrResponse = array('status' => false, 'msg' => 'No es posible almacenar datos.');
 		}
-		echo json_encode($arrResponse,JSON_UNESCAPED_UNICODE);
+		echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
 		die();
 	}
 }

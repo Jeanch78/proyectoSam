@@ -53,7 +53,14 @@
 <!-- Data table plugin-->
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery.dataTables.js"></script>
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/dataTables.bootstrap.min.js"></script>
-
+<!-- agregar clase mm-active en carga -->
+<script type="text/javascript">
+    var data_nav = ("<?= $data["class_active"]; ?>");
+    $(document).ready(function() {
+        $(".buscarActive").removeClass("mm-active"),
+            $("." + data_nav).addClass("mm-active")
+    });
+</script>
 <script type="text/javascript" src="<?= media(); ?>/js/functions_roles.js"></script>
 </body>
 

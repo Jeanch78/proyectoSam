@@ -324,7 +324,7 @@
                     <ul class="vertical-nav-menu">
                         <li class="app-sidebar__heading">Dashboards</li>
                         <li>
-                            <a href="<?= base_url(); ?>/dashboard" class="mm-active">
+                            <a href="<?= base_url(); ?>/dashboard" class="buscarActive  active_dashboard" data-class="active_dashboard">
                                 <i class="metismenu-icon pe-7s-rocket"></i>
                                 Dashboard
                             </a>
@@ -477,14 +477,13 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?= base_url(); ?>/roles" class="">
+                            <a href="<?= base_url(); ?>/roles" class="buscarActive  active_rol" data-class="active_rol">
                                 <i class="metismenu-icon fa fa-user-md"></i>
                                 </i>Roles
                             </a>
                         </li>
                         <li>
                             <a href="<?= base_url(); ?>/permisos">
-
                                 <i class="metismenu-icon pe-7s-tools">
                                 </i>Permisos
                             </a>

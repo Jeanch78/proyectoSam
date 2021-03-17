@@ -12,6 +12,7 @@
 			$data['page_tag'] = "Dashboard - tienda";
 			$data['page_title'] = "Dashboard - tienda";
 			$data['page_name'] = "dashboard";
+			$data['class_active'] = "active_dashboard";
 			$this->views->getView($this,"dashboard",$data);
 		}
 	}
