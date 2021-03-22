@@ -14,3 +14,8 @@
   background: #007bff;
   color     : #fff;
 }
+
+/* clase option roles */
+.notBlock{
+  display: none;
+}

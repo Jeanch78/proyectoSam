@@ -64,8 +64,8 @@ $('#tableRoles').DataTable();
 
 function openModal() {
 	document.querySelector('#idRol').value = "";
-	document.querySelector('.modal-header').classList.replace( "headerUpdate","headerRegister");
-	document.querySelector('#btnActionForm').classList.replace( "btn-info","btn-primary");
+	document.querySelector('.modal-header').classList.replace("headerUpdate", "headerRegister");
+	document.querySelector('#btnActionForm').classList.replace("btn-info", "btn-primary");
 	document.querySelector('#titleModal').innerHTML = "Nuevo Rol";
 	document.querySelector('#btnText').innerHTML = " Guardar";
 	document.querySelector('#formRol').reset();
@@ -90,8 +90,52 @@ function fntEditRol() {
 			document.querySelector('.modal-header').classList.replace("headerRegister", "headerUpdate");
 			document.querySelector('#btnActionForm').classList.replace("btn-primary", "btn-info");
 			document.querySelector('#btnText').innerHTML = " Actualizar";
-			$('#modalFormRol').modal('show');
+
+			var idrol = this.getAttribute("rl");
+			var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsorf.XMLHTTP');
+			var ajaxUrl = base_url + '/Roles/getRol/' + idrol;
+			request.open("GET", ajaxUrl, true);
+			request.send();
+
+			request.onreadystatechange = function () {
+				if (request.readyState == 4 && request.status == 200) {
+					var objData = JSON.parse(request.responseText);
+
+					if (objData.status) {
+						document.querySelector("#idRol").value = objData.data.idrol;
+						document.querySelector("#txtNombre").value = objData.data.nombrerol;
+						document.querySelector("#txtDescripcion").value = objData.data.descripcion;
+						if (objData.data.status == 1) {
+							var optionSelect = '<option value="1" selected class="notBlock">Activo</option>';
+						} else {
+							var optionSelect = '<option value="2" selected class="notBlock">Inactivo</option>';
+						}
+
+						var htmlSelect = `${optionSelect}
+						<option value="1">Activo</option>
+						<option value="2">Inactivo</option>
+						`;
+
+						document.querySelector("#listStatus").innerHTML = htmlSelect;
+						$('#modalFormRol').modal('show');
+					} else {
+						swal("Error", objData.msg, "Error");
+					}
+				}
+			}
 		});
 	});
 }
 
+// const optionsSelect = document
+// 	.querySelector("#listStatus") //elemento select html
+// 	.getElementsByTagName("option"); //elementos option html
+
+// //recorrer los elementos options y añadir atributo selected
+// for (let item of optionsSelect) {
+// 	if (item.value == objData.data.estado) {
+// 		item.setAttribute("selected", "");
+// 	} else {
+// 		item.removeAttribute("selected");
+// 	}
+// }
