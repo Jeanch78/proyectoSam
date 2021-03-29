@@ -29,6 +29,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	formRol.onsubmit = function (e) {
 		e.preventDefault();
 
+		var intIdRol = document.querySelector("#idRol").value;
 		var strNombre = document.querySelector("#txtNombre").value;
 		var strDescripcion = document.querySelector("#txtDescripcion").value;
 		var intStatus = document.querySelector("#listStatus").value;
@@ -50,7 +51,10 @@ document.addEventListener('DOMContentLoaded', function () {
 					formRol.reset();
 					swal("Roles de usuario", objData.msg, "success");
 					tableRoles.api().ajax.reload(function () {
-
+						setTimeout(() => {
+							fntEditRol();
+							fntDelRol();
+						}, 500);
 					});
 				} else {
 					swal("Error", objData.msg, "error");
@@ -63,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 $('#tableRoles').DataTable();
 
 function openModal() {
+	document.querySelector('#formRol').classList.remove("was-validated");
 	document.querySelector('#idRol').value = "";
 	document.querySelector('.modal-header').classList.replace("headerUpdate", "headerRegister");
 	document.querySelector('#btnActionForm').classList.replace("btn-info", "btn-primary");
@@ -79,6 +84,7 @@ function closeModal() {
 window.addEventListener("load", function () {
 	setTimeout(() => {
 		fntEditRol();
+		fntDelRol();
 	}, 500);
 }, false);
 function fntEditRol() {
@@ -126,6 +132,55 @@ function fntEditRol() {
 		});
 	});
 }
+
+function fntDelRol() {
+	var bntDelRol = document.querySelectorAll(".btnDelRol");
+	bntDelRol.forEach(function (btnDelRol) {
+		btnDelRol.addEventListener('click', function () {
+			var idrol = this.getAttribute("rl");
+			swal({
+				title: "Eliminar Rol",
+				text: "¿Realmente desea Eliminar el Rol?",
+				icon: "warning",
+				buttons: [
+					'No, Cancelar!',
+					'Si, Eliminar!'
+				],
+				dangerMode: true,
+			}).then(function (isConfirm) {
+				if (isConfirm) {
+					var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsorf.XMLHTTP');
+					var ajaxDelRol = base_url+'/Roles/delRol/';
+					var strData = 'idrol='+idrol;
+
+					request.open("POST", ajaxDelRol, true);
+					request.setRequestHeader("Content-Type", "application/x-www-form-urlencoded");
+					request.send(strData);
+
+					request.onreadystatechange = function () {
+						if (request.readyState == 4 && request.status == 200) {
+							var objData = JSON.parse(request.responseText);
+							if (objData.status) {
+								swal("Eliminar!", objData.msg, "success");
+								tableRoles.api().ajax.reload(function () {
+									setTimeout(() => {
+										fntEditRol();
+										fntDelRol();
+									}, 500);
+								});
+							} else {
+								swal("Atención!", objData.msg, "error");
+							}
+						} else {
+							swal("Atención!", "Error externo", "error");
+						}
+					}
+					//--------------------------------
+				}
+			});
+		});
+	});
+};
 
 // const optionsSelect = document
 // 	.querySelector("#listStatus") //elemento select html
