@@ -15,6 +15,7 @@ class Roles extends Controllers
 		$data['page_description'] = "Niveles de usuario ";
 		$data['page_name'] = "rol_usuario";
 		$data['class_active'] = "active_rol";
+		$data['page_funtions_js'] = "functions_roles.js";
 
 		$this->views->getView($this, "roles", $data);
 	}

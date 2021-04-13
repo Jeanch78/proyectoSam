@@ -61,7 +61,7 @@
             $("." + data_nav).addClass("mm-active")
     });
 </script>
-<script type="text/javascript" src="<?= media(); ?>/js/functions_roles.js"></script>
+<script type="text/javascript" src="<?= media(); ?>/js/<?= $data["page_funtions_js"];?>"></script>
 </body>
 
 </html>

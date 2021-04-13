@@ -111,6 +111,21 @@ headerAdmin($data);
         </div>
     </div>
 </div>
+<?php
+//  $var="administrador";
+//  $pass=md5($var);
+//  echo $var."<br>";
+//  echo $pass;
+
+ //91f5167c34c400758115c2a6826ec2e3  -> administrador
+ //0cc175b9c0f1b6a831c399e269772661 -> a
+ //92eb5ffee6ae2fec3ad71c777531578f -> b
+ //7fc56270e7a70fa81a5935b72eacbe29 ->A
+ //9d5ed678fe57bcca610140957afab571 ->B
+ //b86fc6b051f63d73de262d4c34e3a0a9 -> AB
+ //187ef4436122d1cc2f40dc2b92f0eba0 ->ab
+ //07159c47ee1b19ae4fb9c40d480856c4 ->ba
+?>
 <!-- =========================Fin de pagina en blanco======================= -->
 <?php
 footerAdmin($data); 
