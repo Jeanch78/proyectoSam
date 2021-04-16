@@ -49,7 +49,7 @@
     const base_url = "<?= base_url(); ?>";
 </script>
 <!-- swetAlert -->
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="<?= media(); ?>/js/plugins/sweetalert.min.js"></script>
 <!-- Data table plugin-->
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery.dataTables.js"></script>
 <script type="text/javascript" src="<?= media(); ?>/js/plugins/dataTables.bootstrap.min.js"></script>
@@ -61,7 +61,7 @@
             $("." + data_nav).addClass("mm-active")
     });
 </script>
-<script type="text/javascript" src="<?= media(); ?>/js/<?= $data["page_funtions_js"];?>"></script>
+<script type="text/javascript" src="<?= media(); ?>/js/<?= $data["page_funtions_js"]; ?>"></script>
 </body>
 
 </html>

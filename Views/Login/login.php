@@ -20,68 +20,20 @@
 </head>
 
 <body>
-    <!-- <div class="app-container app-theme-white body-tabs-shadow">
-        <div class="app-container">
-            <div class="h-100 bg-plum-plate bg-animation">
-                <div class="d-flex h-100 justify-content-center align-items-center">
-                    <div class="mx-auto app-login-box col-md-8">
-                        <div class="app-logo-inverse mx-auto mb-3"></div>
-                        <div class="modal-dialog w-100 mx-auto">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <div class="h5 modal-title text-center">
-                                        <h4 class="mt-2">
-                                            <div>Bienvenido de nuevo,</div>
-                                            <span>Inicie sesión en su cuenta a continuación.</span>
-                                        </h4>
-                                    </div>
-                                    <form class="">
-                                        <div class="form-row">
-                                            <div class="col-md-12">
-                                                <div class="position-relative form-group">
-                                                    <input name="email" id="exampleEmail" placeholder="Email ..." type="email" class="form-control">
-                                                </div>
-                                            </div>
-                                            <div class="col-md-12">
-                                                <div class="position-relative form-group">
-                                                    <input name="password" id="examplePassword" placeholder="Password ..." type="password" class="form-control">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div id="alertLogin" class="text-center"></div>
-                                    </form>
-                                    <div class="divider"></div>
-                                    <h6 class="mb-0">¿No tienes cuenta?<a href="javascript:void(0);" class="text-primary">Regístrate ahora</a></h6>
-                                </div>
-                                <div class="modal-footer clearfix">
-                                    <div class="float-left">
-                                        <a href="javascript:void(0);" class="btn-lg btn btn-link">Recuperar contraseña</a>
-                                    </div>
-                                    <div class="float-right">
-                                        <button class="btn btn-primary btn-lg">Iniciar sesión en el panel</button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="text-center text-white opacity-8 mt-3">Copyright © ProyectoSam 2021</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
+
     <div class="container_login">
         <div class="forms-container">
             <div class="signin-signup">
-                <form action="#" class="sign-in-form">
+                <form action="#" class="sign-in-form" name="formLogin" id="formLogin">
                     <h2 class="title text-center">Bienvenido de nuevo,</h2>
                     <h5 class="text-center">Inicie sesión en su cuenta a continuación.</h5>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="text" placeholder="Username" />
+                        <input type="email" id="txtEmail" placeholder="Email" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" placeholder="Password" />
+                        <input type="password" id="txtPassword" placeholder="Password" />
                     </div>
                     <input type="submit" value="Iniciar sesión" class="btn solid" />
                     <p class="social-text">Nuestras redes sociales</p>
@@ -134,7 +86,7 @@
                     <p>
                         Si olvidaste tus credenciales dar click en Recuperar ,
                         y seguir los pasos requeridos.
-                        
+
                     </p>
                     <button class="btn transparent" id="sign-up-btn">
                         Recuperar
@@ -161,6 +113,8 @@
     <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="<?= media(); ?>/js/bootstrap5.min.js"></script>
     <script type="text/javascript" src="<?= media(); ?>/js/main.js"></script>
+    <!-- swetAlert -->
+    <script src="<?= media(); ?>/js/plugins/sweetalert.min.js"></script>
     <script type="text/javascript" src="<?= media(); ?>/js/<?= $data["page_funtions_js"]; ?>"></script>
 </body>
 
