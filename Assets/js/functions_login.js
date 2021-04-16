@@ -25,10 +25,26 @@ document.addEventListener('DOMContentLoaded', function () {
             let strPassword = document.querySelector('#txtPassword').value;
 
             if (strEmail == "" || strPassword == "") {
-                swal("Por favor", "Escribe Un Usuario y contraseña.", "error");
+                //swal("Por favor", "Escribe Un Usuario y contraseña.", "error");
+                swal({
+                    icon: 'error',
+                    title: 'Por favor',
+                    text: 'Escribe un usuario y contraseña.',
+                    buttons: false,
+                    dangerMode: true,
+                    timer: 3000
+                });
                 return false;
+            } else {
+                var request = (window.XMLHttpRequest) ? new XMLHttpRequest() : new ActiveXObject('Microsorf.XMLHTTP');
+                var ajaxUrl = base_url + '/Login/loginUser';
+                var formData =new FormData(formLogin);
+                request.open("POST",ajaxUrl,true);
+                request.send(formData);
+
+                console.log(request);
             }
-            console.log("strEmail");
+
         }
     }
 }, false);

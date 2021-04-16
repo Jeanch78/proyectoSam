@@ -29,11 +29,11 @@
                     <h5 class="text-center">Inicie sesión en su cuenta a continuación.</h5>
                     <div class="input-field">
                         <i class="fas fa-user"></i>
-                        <input type="email" id="txtEmail" placeholder="Email" />
+                        <input type="email" id="txtEmail" name="txtEmail" placeholder="Email" />
                     </div>
                     <div class="input-field">
                         <i class="fas fa-lock"></i>
-                        <input type="password" id="txtPassword" placeholder="Password" />
+                        <input type="password" id="txtPassword" name="txtPassword" placeholder="Password" />
                     </div>
                     <input type="submit" value="Iniciar sesión" class="btn solid" />
                     <p class="social-text">Nuestras redes sociales</p>
@@ -109,6 +109,9 @@
         </div>
     </div>
     </section>
+    <script>
+        const base_url = "<?= base_url(); ?>";
+    </script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script type="text/javascript" src="<?= media(); ?>/js/plugins/jquery-3.6.0.min.js"></script>
     <script src="<?= media(); ?>/js/bootstrap5.min.js"></script>
