@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     text: 'Escribe un usuario y contraseña.',
                     buttons: false,
                     dangerMode: true,
-                    timer: 3000
+                    timer: 1800
                 });
                 return false;
             } else {
@@ -48,9 +48,24 @@ document.addEventListener('DOMContentLoaded', function () {
                     if (request.status == 200) {
                         var objData = JSON.parse(request.responseText);
                         if (objData.status) {
-                            window.location = base_url + '/dashboard';
+                            swal({
+                                icon: 'success',
+                                title: 'Correcto',
+                                text: objData.msg,
+                                buttons: false,
+                                timer: 1400
+                            });
+                            setTimeout(() => { window.location = base_url + '/dashboard'; }, 1500);
                         } else {
-                            swal("Atención", objData.msg, "error");
+                            //swal("Atención", objData.msg, "error");
+                            swal({
+                                icon: 'error',
+                                title: 'Atención',
+                                text: objData.msg,
+                                buttons: false,
+                                dangerMode: true,
+                                timer: 1800
+                            });
                             document.querySelector('#txtPassword').value = "";
                         }
                     } else {

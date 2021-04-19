@@ -80,7 +80,7 @@
                                         <div tabindex="-1" class="dropdown-divider"></div>
                                         <button type="button" tabindex="0" class="dropdown-item">Dividers</button> -->
                                         <a href="<?= base_url(); ?>/opciones" class="dropdown-item">Opciones</a>
-                                        <a href="<?= base_url(); ?>/perfil" class="dropdown-item">Perfil</a>
+                                        <a href="<?= base_url(); ?>/usuarios/perfil" class="dropdown-item">Perfil</a>
                                         <div tabindex="-1" class="dropdown-divider"></div>
                                         <a href="<?= base_url(); ?>/logout" class="dropdown-item">Logout</a>
                                     </div>
@@ -88,10 +88,12 @@
                             </div>
                             <div class="widget-content-left  ml-3 header-user-info">
                                 <div class="widget-heading">
-                                    Jean Damian
+                                    <?= $_SESSION['userData']['nombres']; ?>
+                                    <!-- usuario -->
                                 </div>
                                 <div class="widget-subheading">
-                                    Administrador
+                                    <?= $_SESSION['userData']['nombrerol']; ?>
+                                    <!-- rol -->
                                 </div>
                             </div>
                             <div class="widget-content-right header-user-info ml-3">

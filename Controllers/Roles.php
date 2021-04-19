@@ -4,6 +4,10 @@ class Roles extends Controllers
 {
 	public function __construct()
 	{
+		session_start();
+		if (empty($_SESSION['login'])) {
+			header('location: ' . base_url() . '/login');
+		}
 		parent::__construct();
 	}
 
@@ -103,7 +107,6 @@ class Roles extends Controllers
 			}
 			echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
 		}
-		//echo json_encode($arrResponse, JSON_UNESCAPED_UNICODE);
 		die();
 	}
 }

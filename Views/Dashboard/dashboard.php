@@ -69,6 +69,8 @@
     </div>
 </div>
 <!-- =================Seccion para editar pagina en blanco================== -->
-
+<?php
+dep($_SESSION['userData']);
+?>
 <!-- =========================Fin de pagina en blanco======================= -->
 <?php footerAdmin($data); ?>
